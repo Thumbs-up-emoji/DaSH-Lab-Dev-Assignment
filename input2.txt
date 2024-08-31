@@ -1,0 +1,5 @@
+What is a GPU and how is it different from a CPU?
+What are the layers of the OSI model?
+What is BeeGFS?
+What are the various components that comprise a computer?
+What is Federated Learning?

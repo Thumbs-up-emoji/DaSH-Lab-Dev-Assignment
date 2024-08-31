@@ -1,0 +1,37 @@
+[
+  {
+    "Prompt": "What is a GPU and how is it different from a CPU?",
+    "Message": "What is a GPU and how is it different from a CPU?\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic field $60^{\\circ}$ away",
+    "TimeSent": "2024-09-01T00:51:44.341950",
+    "TimeRecvd": "2024-09-01T00:51:45.068918",
+    "Source": "Gemma API"
+  },
+  {
+    "Prompt": "What are the layers of the OSI model?",
+    "Message": "What are the layers of the OSI model?\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic field $60^{\\circ}$ away",
+    "TimeSent": "2024-09-01T00:51:45.069165",
+    "TimeRecvd": "2024-09-01T00:51:45.719719",
+    "Source": "Gemma API"
+  },
+  {
+    "Prompt": "What is BeeGFS?",
+    "Message": "What is BeeGFS?\n\nBeeGFS is a distributed file system that provides high performance, high availability, and scalability. It is designed to be used in a cluster of nodes, each of which has its own storage. The BeeGFS cluster is made up of a master node and one or more worker nodes. The master node is responsible for managing the cluster, including allocating storage and coordinating access to it. The worker nodes are responsible for storing and serving data, and they communicate with the master node through a network.",
+    "TimeSent": "2024-09-01T00:51:45.719954",
+    "TimeRecvd": "2024-09-01T00:51:47.765131",
+    "Source": "Gemma API"
+  },
+  {
+    "Prompt": "What are the various components that comprise a computer?",
+    "Message": "What are the various components that comprise a computer?\n\nA 100-W lightbulb generates $95 \\mathrm{~W}$ of heat, which is dissipated through a glass bulb that has a radius of $3.0 \\mathrm{~cm}$ and is $0.50 \\mathrm{~mm}$ thick. What is the difference in temperature between the inner and outer surfaces of the glass?\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms)",
+    "TimeSent": "2024-09-01T00:51:47.765479",
+    "TimeRecvd": "2024-09-01T00:51:48.412481",
+    "Source": "Gemma API"
+  },
+  {
+    "Prompt": "What is Federated Learning?",
+    "Message": "What is Federated Learning?\n\nFederated Learning is a distributed machine learning framework that allows multiple parties to train a machine learning model without sharing any data.\n\nThe parties can be mobile devices, IoT devices, or any other device that has access to data.\n\nThe parties can be located in different geographical locations, and the model can be trained in real-time.\n\nThe parties can also be connected to a central server, which can provide the model training and updates.\n\nFederated Learning is a privacy-preserving machine learning",
+    "TimeSent": "2024-09-01T00:51:48.412749",
+    "TimeRecvd": "2024-09-01T00:51:49.054513",
+    "Source": "Gemma API"
+  }
+]

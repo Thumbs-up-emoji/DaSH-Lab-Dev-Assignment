@@ -1,0 +1,6 @@
+What is an operating system?
+What is the OSI model?
+Who was Alan Turing?
+How do computer networks work?
+What is the Linux Kernel?
+What is a File system?
