@@ -1,86 +1,86 @@
 [
-    {
-        "Prompt": "What is an operating system?",
-        "Message": "List some of the popular operating systems used on servers.\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest in a horizontal plane.",
-        "TimeSent": 1725128262,
-        "TimeRecvd": 1725128265,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is the OSI model?",
-        "Message": "The OSI model is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes",
-        "TimeSent": 1725128265,
-        "TimeRecvd": 1725128267,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "Who was Alan Turing?",
-        "Message": "Alan Turing was a British mathematician, computer scientist, logician, cryptanalyst, and codebreaker. He is best known for his work in the development of the first automatic computer, the Turing machine, and his work on the Enigma code.\n\nAlan Turing was born in London, England, on June 23, 1912. He was the son of a civil servant and a homemaker. Turing was educated at the King\u2019s College School in London and then at the University",
-        "TimeSent": 1725128267,
-        "TimeRecvd": 1725128269,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "How do computer networks work?",
-        "Message": "A 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used to limit the current to $ 6.00~ \\mathrm{A}$.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic",
-        "TimeSent": 1725128269,
-        "TimeRecvd": 1725128271,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is the Linux Kernel?",
-        "Message": "The Linux kernel is the core of the Linux operating system. It is the part of the operating system that manages the hardware and provides the basic services that the operating system needs to run. The kernel is responsible for things like memory management, file system management, and process management.\n\nThe Linux kernel is written in C and C++. It is open source, which means that anyone can look at the code and make changes to it. The Linux kernel is also modular, which means that it can be",
-        "TimeSent": 1725128271,
-        "TimeRecvd": 1725128273,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is a File system?",
-        "Message": "A file system is a collection of files and directories that are used to store and organize data. It is a collection of files and directories that are used to store and organize data.\n\nWhat is a File System?\n\nA file system is a collection of files and directories that are used to store and organize data. It is a collection of files and directories that are used to store and organize data.\n\nWhat is a File System?\n\nA file system is a collection of files and directories that",
-        "TimeSent": 1725128273,
-        "TimeRecvd": 1725128274,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is Docker?",
-        "Message": "Docker is a containerization platform that allows you to package your application and its dependencies into a single unit. It is a lightweight, portable, and self-sufficient package that can be run anywhere.\n\nDocker is a containerization platform that allows you to package your application and its dependencies into a single unit. It is a lightweight, portable, and self-sufficient package that can be run anywhere.\n\nDocker is a containerization platform that allows you to package your application and its dependencies into a single",
-        "TimeSent": 1725128274,
-        "TimeRecvd": 1725128276,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is a GPU and how is it different from a CPU?",
-        "Message": "A 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic field $60^{\\circ}$ away",
-        "TimeSent": 1725128276,
-        "TimeRecvd": 1725128278,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What are the layers of the OSI model?",
-        "Message": "A 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic field $60^{\\circ}$ away",
-        "TimeSent": 1725128278,
-        "TimeRecvd": 1725128280,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is BeeGFS?",
-        "Message": "BeeGFS is a distributed file system that provides high performance, high availability, and scalability. It is designed to be used in a cluster of servers, where each server is responsible for a portion of the file system. BeeGFS is a distributed file system that provides high performance, high availability, and scalability. It is designed to be used in a cluster of servers, where each server is responsible for a portion of the file system.\n\nHow does BeeGFS work?\n\nBeeG",
-        "TimeSent": 1725128280,
-        "TimeRecvd": 1725128282,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What are the various components that comprise a computer?",
-        "Message": "A 100-W lightbulb generates $95 \\mathrm{~W}$ of heat, which is dissipated through a glass bulb that has a radius of $3.0 \\mathrm{~cm}$ and is $0.50 \\mathrm{~mm}$ thick. What is the difference in temperature between the inner and outer surfaces of the glass?\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms)",
-        "TimeSent": 1725128282,
-        "TimeRecvd": 1725128284,
-        "Source": "Hugging Face API"
-    },
-    {
-        "Prompt": "What is Federated Learning?",
-        "Message": "Federated Learning is a distributed machine learning framework that allows multiple parties to train a machine learning model without sharing any data.\n\nThe parties can be mobile devices, IoT devices, or any other device that has access to data.\n\nThe parties can be located in different geographical locations, and the model can be trained in real-time.\n\nThe parties can also be connected to a central server, which can provide the model training and updates.\n\nFederated Learning is a privacy-preserving machine learning",
-        "TimeSent": 1725128284,
-        "TimeRecvd": 1725128286,
-        "Source": "Hugging Face API"
-    }
+  {
+    "Prompt": "What is an operating system?",
+    "Message": "List some of the most widely used operating systems.\n\nIPv6 and IPv4 addressing schemes are that of\n\nA. 20 bites and 32 bits, respectively.\n\nB. 32 bits and 20 bits, respectively.\n\nC. 128 bits and 32 bits, respectively.\n\nD. 128 bits and 128 bits, respectively.\n\nE. 64 bits and 32 bits, respectively.",
+    "TimeSent": 1725152452,
+    "TimeRecvd": 1725152453,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is the OSI model?",
+    "Message": "Network set up and BGP ? describe\n\nAnswer:\n\nThe OSI model is a set of seven model layers that describes how computer data is organised and transported between different components of a computer network. The most common network set up is a three-layer model, consisting of the Physical Layer (which deals with hardware), the\ndatalink layer (which deals with wiring and cables), and the network layer (which deals with routing and addressing). BGP is a protocol that allows routers to negotiate routes between",
+    "TimeSent": 1725152453,
+    "TimeRecvd": 1725152454,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "Who was Alan Turing?",
+    "Message": "Alan Turing was the father of artificial intelligence and the state-of-the-art cybersecurity\n\nWhen Alan Turing was ruling the world of cyberspace and the father of artificial intelligence, who\n\nOr according to other mentionings, from the womb, he was born, not in the womb. He was born,\n\nok could already walk, crawl, or at best with the help of a spell, because he was born with a rather\n\nspecial brain that was bursting with ideas. Alan Turing was special",
+    "TimeSent": 1725152454,
+    "TimeRecvd": 1725152454,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "How do computer networks work?",
+    "Message": "An ant crawls on the surface of a ball of radius b in such a manner that the ant's motion is given in spherical coordinates by the equations r = br and $\\theta=\\omega$t, where $\\omega$ is constant. Determine the equation of motion for $\\varphi$ if $\\theta=\\theta_{0}$.\n\nAn object is launched straight up into the air from the ground with an initial (vertical) speed of $100 \\mathrm{~m} / \\mathrm{",
+    "TimeSent": 1725152454,
+    "TimeRecvd": 1725152455,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is the Linux Kernel?",
+    "Message": "The Linux kernel is a command-line interface operating system that combines the entire kernel, the low-level part of an operating system that interacts with hardware. Linux is open-source software developed by a large developer community.\n\n\nWhat is the Windows Kernel?\n\nWindows Kernel (also called the Microsoft Kernel) is the simplest of the Windows Platform software stack with a tiny JavaScript engine built in to tie it together all together.  It is root of all MS Windows operating systems.  Windows Kernel is",
+    "TimeSent": 1725152455,
+    "TimeRecvd": 1725152456,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is a File system?",
+    "Message": "This is an important concept for understanding the networks that keep our organizations going. A file system can be compared to a warehouse. We need a way to store our employees\u2019 payrolls, employee physical records and the likes. A file system contains files representing these elements. A single item could be saved in many different files in one single file system and released into different places within the organization for access to programs and services. These files represent databases that can be used by many thousand users within the different securities",
+    "TimeSent": 1725152456,
+    "TimeRecvd": 1725152456,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is Docker?",
+    "Message": "</h3>\n\nDocker is a \u201cContainer Engine\u201c. It abstracts away the hard disk, memory, CPU, network, and power management from the host running it to allow you to run\n\n containers. It is similar to a program (.exe/.app) in Windows or Linux, but it does not need to be run on the same software platform as the host. To run Docker, you only need a <i>docker run</i> command. The cool part is that you can run a container without a host or",
+    "TimeSent": 1725152456,
+    "TimeRecvd": 1725152457,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is a GPU and how is it different from a CPU?",
+    "Message": "Segmentation is useful in clustering because it allows us to separate\n\n$\\textbf{\\ \\ a.}\\text{ individuals with extreme traits.} $\n\n$\\textbf{\\ \\ b.}\\text{ offspring from the same mating.} $\n\n$\\textbf{\\ \\ c.}\\text{ generations that share no common characteristics.} $\n\n$\\textbf{\\ \\ d.}\\text{ pieces of tissue that blend together during reproduction.} $\n\nTwo charged spheres are each held at a distance of 18.0 cm, where they attract",
+    "TimeSent": 1725152457,
+    "TimeRecvd": 1725152457,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What are the layers of the OSI model?",
+    "Message": "Explain the functions of each layer?\n\nWhy does a conducting medium become polarized when an electric field is applied?\n\nWhich of the following best represents the waste products of cellular respiration in the cytoplasm of a cell?\n\n(A) Oxygen and carbon dioxide\n\n(B) Carbon dioxide and water\n\n(C) Water and glucose\n\n(D) Oxygen and glucose\n\nA heavy jet gains $1850 \\mathrm{~kg} \\cdot \\mathrm{m} / \\mathrm{s}$",
+    "TimeSent": 1725152457,
+    "TimeRecvd": 1725152458,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is BeeGFS?",
+    "Message": "BeeGFS was created by Nigel Morris who was frustrated by the cost competitiveness of Software Defined Storage. The idea was to create an open source system to make the underlying storage infrastructure highly resource efficient. The idea was no different to where we are developing DataOffice now. By performing a lot of the storage sub-systems virtualisation and RAM server based, this created a very compressed data centre, with a very high processing and storage load to maintain the underlying storage mechanics.\n\nTherefore, each virtual CPU",
+    "TimeSent": 1725152458,
+    "TimeRecvd": 1725152459,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What are the various components that comprise a computer?",
+    "Message": "With so many parts is it possible for things like the motherboard and memory to become corrupted? Of the various individual computer parts, it is still not very common for the motherboard or memory to actually fail.\n\nMotherboard is one of the most important parts of the computer. Along with the processor, they are the most damaging components. Of the various types of motherboards, most retail outlets carry only the more high end motherboards.A motherboard requires special components, they are usually pre-built and priced",
+    "TimeSent": 1725152459,
+    "TimeRecvd": 1725152459,
+    "Source": "Gemma-2b"
+  },
+  {
+    "Prompt": "What is Federated Learning?",
+    "Message": "Federated Learning is an approach for learning algorithms where data is distributed across multiple compute devices connected to a (federated) central server system through a\nsecure communications channel.\n\nThis tool is used to distribute machine learning algorithms to extract knowledge from data on demand. We (i.e. this tool) recommend moving data to a central server for computations.\n\nBenefits\n\n* Reduces the amount of data stored locally\n* Deeper analytics by leveraging more data\n* Shortage of infrastructure for local inference",
+    "TimeSent": 1725152459,
+    "TimeRecvd": 1725152460,
+    "Source": "Gemma-2b"
+  }
 ]

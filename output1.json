@@ -1,44 +1,50 @@
 [
   {
+    "ClientID": "client1",
     "Prompt": "What is an operating system?",
-    "Message": "What is an operating system? List some of the popular operating systems used on servers.\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used and when a glass tube fuse is used.\n\nA 100-turn, 2.0-cm-diameter coil is at rest in a horizontal plane.",
-    "TimeSent": "2024-09-01T00:51:44.339789",
-    "TimeRecvd": "2024-09-01T00:51:45.072629",
-    "Source": "Gemma API"
+    "Message": "List some of the most widely used operating systems.\n\nIPv6 and IPv4 addressing schemes are that of\n\nA. 20 bites and 32 bits, respectively.\n\nB. 32 bits and 20 bits, respectively.\n\nC. 128 bits and 32 bits, respectively.\n\nD. 128 bits and 128 bits, respectively.\n\nE. 64 bits and 32 bits, respectively.",
+    "TimeSent": 1725153661,
+    "TimeRecvd": 1725153661,
+    "Source": "Gemma-2b"
   },
   {
+    "ClientID": "client1",
     "Prompt": "What is the OSI model?",
-    "Message": "What is the OSI model?\n\nThe OSI model is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes the communication process between two computers. It is a model that describes",
-    "TimeSent": "2024-09-01T00:51:45.072935",
-    "TimeRecvd": "2024-09-01T00:51:45.716281",
-    "Source": "Gemma API"
+    "Message": "Network set up and BGP ? describe\n\nAnswer:\n\nThe OSI model is a set of seven model layers that describes how computer data is organised and transported between different components of a computer network. The most common network set up is a three-layer model, consisting of the Physical Layer (which deals with hardware), the\ndatalink layer (which deals with wiring and cables), and the network layer (which deals with routing and addressing). BGP is a protocol that allows routers to negotiate routes between",
+    "TimeSent": 1725153662,
+    "TimeRecvd": 1725153662,
+    "Source": "Gemma-2b"
   },
   {
+    "ClientID": "client1",
     "Prompt": "Who was Alan Turing?",
-    "Message": "Who was Alan Turing?\n\nAlan Turing was a British mathematician, logician, cryptanalyst, and computer scientist. He is best known for his work in the field of artificial intelligence and his contribution to the development of the modern computer.\n\nTuring was born in London in 1912 and attended King\u2019s College London, where he earned a degree in mathematics. He later went on to study at the University of Cambridge, where he earned a doctorate in mathematics.\n\nAfter completing his studies, Turing worked as",
-    "TimeSent": "2024-09-01T00:51:45.716721",
-    "TimeRecvd": "2024-09-01T00:51:47.750760",
-    "Source": "Gemma API"
+    "Message": "Alan Turing was the father of artificial intelligence and the state-of-the-art cybersecurity\n\nWhen Alan Turing was ruling the world of cyberspace and the father of artificial intelligence, who\n\nOr according to other mentionings, from the womb, he was born, not in the womb. He was born,\n\nok could already walk, crawl, or at best with the help of a spell, because he was born with a rather\n\nspecial brain that was bursting with ideas. Alan Turing was special",
+    "TimeSent": 1725153662,
+    "TimeRecvd": 1725153662,
+    "Source": "Gemma-2b"
   },
   {
+    "ClientID": "client1",
     "Prompt": "How do computer networks work?",
-    "Message": "How do computer networks work?\n\nA 100-W lightbulb is plugged into a standard $120-\\mathrm{V}$ (rms) outlet. Find $(a) I_{\\text {mas }}$ and $(b) I_{\\max }$ when a silicone rubber fuse is used to limit the current to $ 6.00~ \\mathrm{A}$.\n\nA 100-turn, 2.0-cm-diameter coil is at rest with its axis vertical. A uniform magnetic",
-    "TimeSent": "2024-09-01T00:51:47.751203",
-    "TimeRecvd": "2024-09-01T00:51:48.393026",
-    "Source": "Gemma API"
+    "Message": "An ant crawls on the surface of a ball of radius b in such a manner that the ant's motion is given in spherical coordinates by the equations r = br and $\\theta=\\omega$t, where $\\omega$ is constant. Determine the equation of motion for $\\varphi$ if $\\theta=\\theta_{0}$.\n\nAn object is launched straight up into the air from the ground with an initial (vertical) speed of $100 \\mathrm{~m} / \\mathrm{",
+    "TimeSent": 1725153663,
+    "TimeRecvd": 1725153663,
+    "Source": "Gemma-2b"
   },
   {
+    "ClientID": "client1",
     "Prompt": "What is the Linux Kernel?",
-    "Message": "What is the Linux Kernel?\n\nThe Linux kernel is the core of the Linux operating system. It is the part of the operating system that manages the hardware and provides the basic services that the operating system needs to run. The kernel is responsible for things like memory management, file system management, and process management.\n\nThe Linux kernel is written in C and C++. It is open source, which means that anyone can look at the code and make changes to it. The Linux kernel is also modular, which means that it can be",
-    "TimeSent": "2024-09-01T00:51:48.393301",
-    "TimeRecvd": "2024-09-01T00:51:49.039813",
-    "Source": "Gemma API"
+    "Message": "The Linux kernel is a command-line interface operating system that combines the entire kernel, the low-level part of an operating system that interacts with hardware. Linux is open-source software developed by a large developer community.\n\n\nWhat is the Windows Kernel?\n\nWindows Kernel (also called the Microsoft Kernel) is the simplest of the Windows Platform software stack with a tiny JavaScript engine built in to tie it together all together.  It is root of all MS Windows operating systems.  Windows Kernel is",
+    "TimeSent": 1725153663,
+    "TimeRecvd": 1725153663,
+    "Source": "Gemma-2b"
   },
   {
+    "ClientID": "client1",
     "Prompt": "What is a File system?",
-    "Message": "What is a File system?\n\nA file system is a collection of files and directories that are used to store and organize data. It is a collection of files and directories that are used to store and organize data.\n\nWhat is a File System?\n\nA file system is a collection of files and directories that are used to store and organize data. It is a collection of files and directories that are used to store and organize data.\n\nWhat is a File System?\n\nA file system is a collection of files and directories that",
-    "TimeSent": "2024-09-01T00:51:49.040064",
-    "TimeRecvd": "2024-09-01T00:51:50.985044",
-    "Source": "Gemma API"
+    "Message": "This is an important concept for understanding the networks that keep our organizations going. A file system can be compared to a warehouse. We need a way to store our employees\u2019 payrolls, employee physical records and the likes. A file system contains files representing these elements. A single item could be saved in many different files in one single file system and released into different places within the organization for access to programs and services. These files represent databases that can be used by many thousand users within the different securities",
+    "TimeSent": 1725153664,
+    "TimeRecvd": 1725153664,
+    "Source": "Gemma-2b"
   }
 ]

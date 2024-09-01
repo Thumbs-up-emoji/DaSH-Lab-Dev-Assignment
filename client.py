@@ -1,113 +1,105 @@
 import socket
 import json
-import sys
-import os
 import time
+import sys
+import threading
 
-def read_prompts(file_path):
-    with open(file_path, 'r') as file:
-        return [line.strip() for line in file if line.strip()]
-
-def save_to_json(data, output_file):
-    with open(output_file, 'w') as f:
-        json.dump(data, f, indent=2)
-
-def read_server_port():
-    max_retries = 10
-    retry_delay = 1
-    for _ in range(max_retries):
-        try:
-            with open('server_port.txt', 'r') as f:
-                return int(f.read().strip())
-        except (FileNotFoundError, ValueError):
-            time.sleep(retry_delay)
-    raise RuntimeError("Could not read server port")
-
-class GemmaClient:
-    def __init__(self, host='localhost'):
+class LLMClient:
+    def __init__(self, host='localhost', port=5000, client_id=None, input_file=None, output_file=None):
         self.host = host
-        self.port = read_server_port()
-        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.port = port
+        self.client_id = client_id
+        self.input_file = input_file
+        self.output_file = output_file
+        self.socket = None
+        self.results = []
+        self.expected_responses = 0
+        self.received_responses = 0
+        self.lock = threading.Lock()
 
     def connect(self):
-        max_retries = 5
-        retry_delay = 2
-        for attempt in range(max_retries):
+        for attempt in range(5):  # Try to connect 5 times
             try:
+                self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 self.socket.connect((self.host, self.port))
-                print(f"Connected to server on port {self.port}")
-                
-                # Handshake
-                handshake = self.socket.recv(1024).decode('utf-8')
-                if handshake != "READY":
-                    print(f"Unexpected handshake: {handshake}")
-                    raise RuntimeError("Handshake failed")
-                self.socket.send("READY".encode('utf-8'))
-                
-                return
+                print(f"Connected to server {self.host}:{self.port}")
+                return True
             except socket.error as e:
                 print(f"Connection attempt {attempt + 1} failed: {e}")
-                if attempt < max_retries - 1:
-                    print(f"Retrying in {retry_delay} seconds...")
-                    time.sleep(retry_delay)
-        raise RuntimeError("Failed to connect to the server")
+                time.sleep(2)  # Wait for 2 seconds before retrying
+        print("Failed to connect to the server after multiple attempts.")
+        return False
 
-    def send_prompt(self, prompt):
-        message = json.dumps({"prompt": prompt})
-        print(f"Sending prompt: {message}")
-        self.socket.send(message.encode('utf-8'))
+    def send_prompts(self):
+        with open(self.input_file, 'r') as file:
+            prompts = [line.strip() for line in file if line.strip()]
 
-    def receive_response(self):
-        max_retries = 3
-        retry_delay = 1
-        for attempt in range(max_retries):
+        self.expected_responses = len(prompts)
+        for prompt in prompts:
+            message = json.dumps({
+                'client_id': self.client_id,
+                'prompt': prompt
+            })
+            self.socket.sendall(message.encode('utf-8'))
+            print(f"Sent prompt: {prompt}")
+
+    def receive_responses(self):
+        while self.received_responses < self.expected_responses:
             try:
-                response = self.socket.recv(4096).decode('utf-8')
-                print(f"Received raw response: {response}")
-                return json.loads(response)
-            except json.JSONDecodeError as e:
-                print(f"JSON decoding error (attempt {attempt + 1}): {e}")
-                if attempt < max_retries - 1:
-                    print(f"Retrying in {retry_delay} seconds...")
-                    time.sleep(retry_delay)
-                else:
-                    print("Failed to decode JSON after multiple attempts")
-                    return {"error": "Failed to decode server response"}
+                message_length = int.from_bytes(self.socket.recv(4), byteorder='big')
+                data = self.receive_all(message_length)
+                if not data:
+                    break
+                response = json.loads(data)
+                time_received = int(time.time())
+                result = {
+                    "ClientID": self.client_id,
+                    "Prompt": response['prompt'],
+                    "Message": response['response'],
+                    "TimeSent": int(time.time()),  # Approximation
+                    "TimeRecvd": time_received,
+                    "Source": "Gemma-2b" if response['client_id'] == self.client_id else "user"
+                }
+                with self.lock:
+                    self.results.append(result)
+                    self.received_responses += 1
+                print(f"Received response {self.received_responses}/{self.expected_responses} for prompt: {response['prompt'][:30]}...")
+            except Exception as e:
+                print(f"Error receiving response: {e}")
+                break
 
-    def close(self):
-        self.socket.close()
+    def receive_all(self, n):
+        data = bytearray()
+        while len(data) < n:
+            packet = self.socket.recv(n - len(data))
+            if not packet:
+                return None
+            data.extend(packet)
+        return data.decode('utf-8')
 
-def main(input_file, output_file):
-    client = GemmaClient()
-    client.connect()
+    def write_results(self):
+        with open(self.output_file, 'w') as file:
+            json.dump(self.results, file, indent=2)
+        print(f"Results written to {self.output_file}")
 
-    prompts = read_prompts(input_file)
-    results = []
-
-    for prompt in prompts:
+    def run(self):
         try:
-            client.send_prompt(prompt)
-            response = client.receive_response()
-            results.append(response)
+            if not self.connect():
+                return
+            self.send_prompts()
+            self.receive_responses()
         except Exception as e:
-            print(f"Error processing prompt '{prompt}': {e}")
-            results.append({"error": str(e), "prompt": prompt})
-
-    save_to_json(results, output_file)
-    print(f"Results saved to {output_file}")
-
-    client.close()
+            print(f"An error occurred: {e}")
+        finally:
+            if self.socket:
+                self.socket.close()
+            self.write_results()  # Ensure results are written even if an error occurs
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python3 client.py <input_file> <output_file>")
+    if len(sys.argv) != 5:
+        print("Usage: python3 client.py <client_id> <input_file> <output_file> <server_port>")
         sys.exit(1)
 
-    input_file = sys.argv[1]
-    output_file = sys.argv[2]
-
-    if not os.path.exists(input_file):
-        print(f"Input file {input_file} does not exist.")
-        sys.exit(1)
-
-    main(input_file, output_file)
+    client_id, input_file, output_file, port = sys.argv[1], sys.argv[2], sys.argv[3], int(sys.argv[4])
+    client = LLMClient(client_id=client_id, input_file=input_file, output_file=output_file, port=port)
+    client.run()
