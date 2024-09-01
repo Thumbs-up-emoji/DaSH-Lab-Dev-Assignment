@@ -9,6 +9,11 @@ cleanup() {
 # Set up trap to call cleanup function on script exit
 trap cleanup EXIT
 
+# Activate the virtual environment
+source venv/bin/activate
+
+pip install requests
+
 # Start the server
 python3 server.py &
 SERVER_PID=$!
@@ -25,7 +30,6 @@ fi
 # Start the clients
 python3 client.py client1 input1.txt output1.json 5000 &
 CLIENT1_PID=$!
-
 python3 client.py client2 input2.txt output2.json 5000 &
 CLIENT2_PID=$!
 
